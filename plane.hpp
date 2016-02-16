@@ -56,8 +56,12 @@ namespace unit_test {
 				REQUIRE(spd.y > 0.f);
 			}
 			WHEN("사용자가 <- 방향키를 눌렀다면") {
+				sf::Vector2f pos = plane.getPosition();
+				//plane.move(UserInput::Left);
 				THEN("비행기는 30, 30 위치보다 왼쪽으로 이동해 있어야 한다") {
-
+					sf::Vector2f position = plane.getPosition();
+					CHECK(position.x < pos.x);
+					CHECK(position.y == pos.y);
 				}
 			}
 		}
