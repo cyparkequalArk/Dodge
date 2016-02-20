@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+Dodge Game.sdf
+*.tlog
+x64/Debug/vc140.idb
