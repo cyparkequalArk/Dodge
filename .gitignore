@@ -40,3 +40,5 @@ CMakeFiles
 *.vcxproj
 *.vcxproj.filters
 *.sdf
+cmake_install.cmake
+CTestTestfile.cmake
