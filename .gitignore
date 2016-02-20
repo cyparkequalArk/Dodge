@@ -42,3 +42,4 @@ CMakeFiles
 *.sdf
 cmake_install.cmake
 CTestTestfile.cmake
+*.opendb
