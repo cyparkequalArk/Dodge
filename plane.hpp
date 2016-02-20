@@ -1,4 +1,4 @@
-#ifndef __PLANE_HPP__
+﻿#ifndef __PLANE_HPP__
 #define __PLANE_HPP__
 
 #include <iostream>

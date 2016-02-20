@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "plane.hpp"
 
 #ifndef CATCH_CONFIG_RUNNER
@@ -12,23 +12,23 @@ int main(int argc, char* argv[])
 }
 
 namespace unit_test {
-	SCENARIO("ºñÇà±â´Â »ç¿ëÀÚ ÀÔ·Â¿¡ µû¶ó ¿òÁ÷¿©¾ß ÇÑ´Ù", "CPlane") {
-		GIVEN("È­¸é»óÀÇ 30, 30 À§Ä¡¿¡ ºñÇà±â °´Ã¼°¡ ¸¸µé¾îÁ® ÀÖ´Ù.") {
+	SCENARIO("ë¹„í–‰ê¸°ëŠ” ì‚¬ìš©ìž ìž…ë ¥ì— ë”°ë¼ ì›€ì§ì—¬ì•¼ í•œë‹¤", "CPlane") {
+		GIVEN("í™”ë©´ìƒì˜ 30, 30 ìœ„ì¹˜ì— ë¹„í–‰ê¸° ê°ì²´ê°€ ë§Œë“¤ì–´ì ¸ ìžˆë‹¤.") {
 			CPlane plane(sf::Vector2f(30, 30));
-			THEN("ºñÇà±âÀÇ À§Ä¡¸¦ È®ÀÎ½Ã 30, 30 ÀÌ¾î¾ß ÇÑ´Ù") {
+			THEN("ë¹„í–‰ê¸°ì˜ ìœ„ì¹˜ë¥¼ í™•ì¸ì‹œ 30, 30 ì´ì–´ì•¼ í•œë‹¤") {
 				sf::Vector2f pos = plane._position;
 				REQUIRE(pos.x == 30.f);
 				REQUIRE(pos.y == 30.f);
 			}
-			THEN("ºñÇà±âÀÇ ¿òÁ÷ÀÌ´Â ¼Óµµ´Â 0º¸´Ù ³ô¾Æ¾ß ÇÑ´Ù") {
+			THEN("ë¹„í–‰ê¸°ì˜ ì›€ì§ì´ëŠ” ì†ë„ëŠ” 0ë³´ë‹¤ ë†’ì•„ì•¼ í•œë‹¤") {
 				sf::Vector2f spd = plane._speed;
 				REQUIRE(spd.x > 0.f);
 				REQUIRE(spd.y > 0.f);
 			}
-			WHEN("»ç¿ëÀÚ°¡ <- ¹æÇâÅ°¸¦ ´­·¶´Ù¸é") {
+			WHEN("ì‚¬ìš©ìžê°€ <- ë°©í–¥í‚¤ë¥¼ ëˆŒë €ë‹¤ë©´") {
 				sf::Vector2f pos = plane._position;
 				//plane.move(UserInput::Left);
-				THEN("ºñÇà±â´Â 30, 30 À§Ä¡º¸´Ù ¿ÞÂÊÀ¸·Î ÀÌµ¿ÇØ ÀÖ¾î¾ß ÇÑ´Ù") {
+				THEN("ë¹„í–‰ê¸°ëŠ” 30, 30 ìœ„ì¹˜ë³´ë‹¤ ì™¼ìª½ìœ¼ë¡œ ì´ë™í•´ ìžˆì–´ì•¼ í•œë‹¤") {
 					sf::Vector2f position = plane._position;
 					CHECK(position.x < pos.x);
 					CHECK(position.y == pos.y);
