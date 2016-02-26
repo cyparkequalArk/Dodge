@@ -27,3 +27,20 @@
 *.out
 *.app
 *.un~
+
+# Custom
+Dodge Game.sdf
+*.tlog
+x64/Debug/vc140.idb
+Dodge Game.VC.opendb
+.CMakeLists.txt.un~
+CMakeCache.txt
+CMakeFiles
+*~
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.sdf
+cmake_install.cmake
+CTestTestfile.cmake
+*.opendb
