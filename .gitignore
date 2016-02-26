@@ -26,6 +26,7 @@
 *.exe
 *.out
 *.app
+*.un~
 
 # Custom
 Dodge Game.sdf
