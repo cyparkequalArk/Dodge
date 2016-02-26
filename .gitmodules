@@ -8,9 +8,9 @@
 	ignore = dirty
 [submodule "lib/sfml2.3.2_w64"]
 	path = lib/sfml2.3.2_w64
-	url = git@github.com:seungrye/SFML2.3.2_VS2015_x64.git
+	url = https://github.com/seungrye/SFML2.3.2_VS2015_x64.git
 	ignore = dirty
 [submodule "lib/sfml2.3.2_w32"]
 	path = lib/sfml2.3.2_w32
-	url = git@github.com:seungrye/SFML2.3.2_VS2015_x32.git
+	url = https://github.com/seungrye/SFML2.3.2_VS2015_x32.git
 	ignore = dirty
